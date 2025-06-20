@@ -12,17 +12,17 @@ langgraph>=0.0.40
 duckduckgo-search>=4.0.0
 
 # FastAPI and web server dependencies
-fastapi>=0.104.0
-uvicorn[standard]>=0.23.0
-python-multipart>=0.0.6
+fastapi==0.115.13
+uvicorn==0.34.3
+python-multipart==0.0.20
 
 # Additional dependencies for web scraping and HTTP requests
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 
 # For JSON handling and data processing
-python-dotenv>=1.0.0
-pydantic>=2.0.0
+python-dotenv==1.1.0
+pydantic==2.11.7
 
 # For better async support
 aiohttp>=3.8.0
