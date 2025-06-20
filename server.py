@@ -58,10 +58,10 @@ class ResearchResult(BaseModel):
 research_sessions: Dict[str, Dict[str, Any]] = {}
 research_history = []
 
-@app.get("/")
-async def root():
-    """Root endpoint - serves the frontend"""
-    return {"message": "Multi-Agent Research Assistant API", "status": "running"}
+# @app.get("/")
+# async def root():
+#     """Root endpoint - serves the frontend"""
+#     return {"message": "Multi-Agent Research Assistant API", "status": "running"}
 
 @app.get("/health")
 async def health_check():
@@ -270,7 +270,7 @@ try:
 except:
     pass  # static directory might not exist
 
-@app.get("/app", response_class=HTMLResponse)
+@app.get("/", response_class=HTMLResponse)
 async def serve_frontend():
     """Serve the frontend HTML"""
     try:
